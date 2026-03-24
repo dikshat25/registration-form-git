@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Registration Form - CI Test</title>
+    <title>Simple Registration Form</title>
 </head>
 <body>
-    <h1 style="color: #2c3e50; text-align: center;">Jenkins CI/CD Deployment</h1>
-    <p style="text-align: center; color: green;">
-        Status: Successfully deployed via Continuous Integration
-    </p>
 
-    <form id="regForm">
-        <input type="text" id="name" placeholder="Name">
-        <input type="email" id="email" placeholder="Email">
-        <button type="button" onclick="validateForm()">Register</button>
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+        <label>Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email"><br><br>
+
+        <button type="submit">Register</button>
     </form>
-    
+
     <script src="script.js"></script>
+
 </body>
 </html>
