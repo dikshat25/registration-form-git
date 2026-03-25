@@ -3,28 +3,37 @@
 
 <html>
 <head>
-    <title>Simple Registration Form</title>
+    <title>Advanced Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h2>Registration Form</h2>
+<div class="container">
+    <h2>Registration Form</h2>
+    <p>Build 2 - Updated via Continuous Integration</p>
 
-        <p>Build 2 - Updated via Continuous Integration</p>
+    <form onsubmit="return validateForm()">
 
-        <form onsubmit="return validateForm()">
-            <label>Name:</label>
-            <input type="text" id="name" placeholder="Enter your name">
+        <div class="input-group">
+            <input type="text" id="name" placeholder=" ">
+            <label>Name</label>
+            <div id="nameError" class="error"></div>
+        </div>
 
-            <label>Email:</label>
-            <input type="email" id="email" placeholder="Enter your email">
+        <div class="input-group">
+            <input type="email" id="email" placeholder=" ">
+            <label>Email</label>
+            <div id="emailError" class="error"></div>
+        </div>
 
-            <button type="submit">Register</button>
-        </form>
-    </div>
+        <button type="submit">Register</button>
 
-    <script src="script.js"></script>
+        <div id="successMsg" class="success">Registration Successful!</div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
