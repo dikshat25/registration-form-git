@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Updated via Continuous Integration - Build 2 -->
+
 <html>
 <head>
     <title>Simple Registration Form</title>
@@ -6,17 +8,21 @@
 </head>
 <body>
 
-    <h2>Registration Form</h2>
+    <div class="container">
+        <h2>Registration Form</h2>
 
-    <form onsubmit="return validateForm()">
-        <label>Name:</label>
-        <input type="text" id="name">
+        <p>Build 2 - Updated via Continuous Integration</p>
 
-        <label>Email:</label>
-        <input type="email" id="email">
+        <form onsubmit="return validateForm()">
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
 
-        <button type="submit">Register</button>
-    </form>
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
 
     <script src="script.js"></script>
 
